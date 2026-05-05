@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Cybernet Solutions — AI-powered network and cybersecurity solutions. We connect real people with reliable, scalable and secure technology." />
+    <meta name="theme-color" content="#2D5BFF" />
+    <title>Cybernet Solutions — We Connect Real People</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+</head>
+<body>
+
+    <!-- ============ HEADER ============ -->
+    <header class="site-header" id="siteHeader">
+        <div class="container header-inner">
+            <a href="#top" class="brand" aria-label="Cybernet Solutions">
+                <span class="brand-mark" aria-hidden="true">
+                    <img src="assets/logo.svg" alt="" width="44" height="44" />
+                </span>
+                <span class="brand-text">
+                    <span class="brand-name">Cybernet</span>
+                    <span class="brand-sub">Solutions</span>
+                </span>
+            </a>
+
+            <nav class="primary-nav" id="primaryNav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="#top" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About us</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#contact" class="nav-link">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="#contact" class="btn btn-primary header-cta">Schedule a Call</a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ============ MOBILE NAV ============ -->
+    <aside class="mobile-nav" id="mobileNav" aria-hidden="true">
+        <div class="mobile-nav-inner">
+            <ul class="mobile-links">
+                <li><a href="#top" class="mobile-link active">Home</a></li>
+                <li><a href="#about" class="mobile-link">About us</a></li>
+                <li><a href="#services" class="mobile-link">Services</a></li>
+                <li><a href="#contact" class="mobile-link">Contact Us</a></li>
+            </ul>
+            <div class="mobile-nav-footer">
+                <a href="#contact" class="btn btn-primary btn-full">Schedule a Call</a>
+            </div>
+        </div>
+    </aside>
+    <div class="overlay" id="overlay"></div>
+
+    <main id="top">
+
+        <!-- ============ HERO ============ -->
+        <section class="hero">
+            <div class="container hero-inner">
+                <div class="hero-copy">
+                    <span class="eyebrow">
+                        <span class="eyebrow-dot"></span>
+                        Network &amp; Cybersecurity Experts
+                    </span>
+                    <h1 class="hero-title">
+                        We <span class="text-gradient">Connect</span><br/>
+                        Real People.
+                    </h1>
+                    <p class="hero-text">
+                        We design, deploy and protect network infrastructures with AI-driven
+                        technologies. More than 10 years helping companies operate securely,
+                        efficiently and at scale in the digital era.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary btn-lg">
+                            Schedule a Call
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </a>
+                        <a href="#services" class="btn btn-ghost btn-lg">Explore services</a>
+                    </div>
+
+                </div>
+
+                <div class="hero-visual" aria-hidden="true">
+                    <div class="hero-blob"></div>
+                    <div class="hero-card hero-card-main">
+                        <div class="hero-card-header">
+                            <div class="dot dot-r"></div><div class="dot dot-y"></div><div class="dot dot-g"></div>
+                            <span>network.monitor</span>
+                        </div>
+                        <div class="hero-card-body">
+                            <div class="hero-stat">
+                                <span class="hero-stat-label">Uptime</span>
+                                <span class="hero-stat-value">99.98%</span>
+                            </div>
+                            <div class="bars">
+                                <span style="--h:55%"></span>
+                                <span style="--h:80%"></span>
+                                <span style="--h:42%"></span>
+                                <span style="--h:90%"></span>
+                                <span style="--h:65%"></span>
+                                <span style="--h:75%"></span>
+                                <span style="--h:88%"></span>
+                                <span style="--h:60%"></span>
+                            </div>
+                            <div class="hero-card-rows">
+                                <div class="row-pulse">
+                                    <span class="pulse-dot"></span>
+                                    <span class="pulse-label">Threat Detection</span>
+                                    <span class="pulse-tag pulse-ok">Secure</span>
+                                </div>
+                                <div class="row-pulse">
+                                    <span class="pulse-dot pulse-yellow"></span>
+                                    <span class="pulse-label">Bandwidth</span>
+                                    <span class="pulse-tag pulse-warn">76%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero-floater hero-floater-1">
+                        <span class="floater-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2 4 6v6c0 5 3.4 9.5 8 10 4.6-.5 8-5 8-10V6l-8-4z" stroke="white" stroke-width="2" fill="none"/><path d="m9 12 2 2 4-4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </span>
+                        <div>
+                            <strong>Zero Trust</strong>
+                            <span>Architecture</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-floater hero-floater-2">
+                        <span class="floater-emoji">⚡</span>
+                        <div>
+                            <strong>AI-Powered</strong>
+                            <span>Network Mgmt</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ ABOUT / STATS ============ -->
+        <section class="section about" id="about">
+            <div class="container about-inner">
+                <div class="about-copy">
+                    <span class="section-eyebrow">About us</span>
+                    <h2 class="section-title">
+                        More than a decade connecting businesses with
+                        <span class="text-gradient">reliable</span> technology.
+                    </h2>
+                    <p class="section-text">
+                        At Cybernet Solutions we partner with industry leaders to verify, protect
+                        and scale their teams while solving their network challenges. Our approach
+                        combines engineering, AI and a close, human-centered support.
+                    </p>
+
+                    <ul class="bullet-list">
+                        <li>
+                            <span class="bullet-icon">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="m3 7 3 3 5-6" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </span>
+                            Tailored solutions for every business
+                        </li>
+                        <li>
+                            <span class="bullet-icon">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="m3 7 3 3 5-6" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </span>
+                            Proactive support and 24/7 monitoring
+                        </li>
+                        <li>
+                            <span class="bullet-icon">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="m3 7 3 3 5-6" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </span>
+                            Continuous innovation with AI and Zero Trust
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="about-stats">
+                    <div class="stat-card stat-primary">
+                        <span class="stat-number" data-count="10">10+</span>
+                        <span class="stat-label">Years of experience</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" data-count="500">500+</span>
+                        <span class="stat-label">Companies served</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" data-count="99">99%</span>
+                        <span class="stat-label">Satisfaction rate</span>
+                    </div>
+                    <div class="stat-card stat-dark">
+                        <span class="stat-number" data-count="24">24/7</span>
+                        <span class="stat-label">Continuous support</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ SERVICES ============ -->
+        <section class="section services" id="services">
+            <div class="container">
+                <div class="section-head">
+                    <span class="section-eyebrow">Our Services</span>
+                    <h2 class="section-title">
+                        Services that <span class="text-gradient">transform</span> your network
+                    </h2>
+                    <p class="section-text">
+                        From assessment to implementation: we cover every stage of your network
+                        and cybersecurity infrastructure lifecycle.
+                    </p>
+                </div>
+
+                <div class="services-grid">
+                    <article class="service-card">
+                        <div class="service-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                                <path d="M3 12h4l3-9 4 18 3-9h4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Network Assessment</h3>
+                        <p>
+                            Comprehensive evaluation of your infrastructure to identify strengths,
+                            vulnerabilities and improvement opportunities powered by AI.
+                        </p>
+                        <ul class="service-list">
+                            <li>Cisco AI Network Analytics</li>
+                            <li>Juniper Networks insights</li>
+                            <li>AI-powered threat detection</li>
+                        </ul>
+                        <a href="#contact" class="service-link">
+                            Request assessment
+                            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </a>
+                    </article>
+
+                    <article class="service-card service-card-featured">
+                        <span class="featured-tag">Most requested</span>
+                        <div class="service-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                                <rect x="3" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="2"/>
+                                <rect x="14" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="2"/>
+                                <rect x="3" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="2"/>
+                                <rect x="14" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="2"/>
+                                <path d="M10 6.5h4M10 17.5h4M6.5 10v4M17.5 10v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h3>Network Design &amp; Planning</h3>
+                        <p>
+                            Custom network architectures and strategic plans aligned with your
+                            specific business goals.
+                        </p>
+                        <ul class="service-list">
+                            <li>Predictive analytics</li>
+                            <li>Zero Trust Architecture</li>
+                            <li>Advanced encryption</li>
+                        </ul>
+                        <a href="#contact" class="service-link">
+                            Design my network
+                            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </a>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l3 3M16 16l3 3M5 19l3-3M16 8l3-3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3>Network Implementation</h3>
+                        <p>
+                            Turnkey deployment, configuration and integration of your network
+                            solutions, with modern automation.
+                        </p>
+                        <ul class="service-list">
+                            <li>Ansible &amp; Terraform</li>
+                            <li>Next-gen firewalls</li>
+                            <li>IPS prevention systems</li>
+                        </ul>
+                        <a href="#contact" class="service-link">
+                            Deploy now
+                            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ MISSION PILLARS ============ -->
+        <section class="section pillars">
+            <div class="container">
+                <div class="section-head section-head-row">
+                    <div>
+                        <span class="section-eyebrow">Why Choose Us</span>
+                        <h2 class="section-title">
+                            Three pillars that drive<br/>
+                            every project we deliver.
+                        </h2>
+                    </div>
+                    <p class="section-text section-text-narrow">
+                        We combine personalization, anticipation and constant innovation to deliver
+                        measurable results in the short and long term.
+                    </p>
+                </div>
+
+                <div class="pillars-grid">
+                    <div class="pillar">
+                        <span class="pillar-num">01</span>
+                        <h3>Customized Solutions</h3>
+                        <p>
+                            Cybersecurity and network strategies tailored to the specific challenges
+                            of every client.
+                        </p>
+                    </div>
+                    <div class="pillar pillar-accent">
+                        <span class="pillar-num">02</span>
+                        <h3>Proactive Support</h3>
+                        <p>
+                            Continuous monitoring and preventive management to minimize downtime
+                            before it happens.
+                        </p>
+                    </div>
+                    <div class="pillar">
+                        <span class="pillar-num">03</span>
+                        <h3>Continuous Innovation</h3>
+                        <p>
+                            Implementation of the latest AI and network management technologies to
+                            keep you always ahead.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ FOUNDER ============ -->
+        <section class="section founder">
+            <div class="container founder-inner founder-centered">
+                <div class="founder-copy">
+                    <span class="section-eyebrow">Meet our founder</span>
+                    <h2 class="section-title">
+                        Cristian Oswaldo
+                        <span class="text-gradient">Cristancho Celis</span>
+                    </h2>
+                    <p class="founder-role">
+                        <span class="founder-badge-inline">
+                            <svg width="14" height="14" viewBox="0 0 14 14"><path d="m3 7 3 3 5-6" stroke="white" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            CCNA Certified
+                        </span>
+                        Electronic Engineer · Telecommunications Technologist
+                    </p>
+                    <p class="section-text">
+                        Over 10 years of experience in network administration, maintenance and
+                        cybersecurity. International CCNA and CCENT certifications back every
+                        project we lead.
+                    </p>
+                    <div class="founder-tags">
+                        <span class="tag">CCNA</span>
+                        <span class="tag">CCENT</span>
+                        <span class="tag">Cybersecurity</span>
+                        <span class="tag">Network Admin</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ TIMELINE ============ -->
+        <section class="section timeline-section">
+            <div class="container">
+                <div class="section-head">
+                    <span class="section-eyebrow">Our Journey</span>
+                    <h2 class="section-title">This is how we did it.</h2>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-line"></div>
+                    <div class="timeline-item">
+                        <span class="timeline-year">2014</span>
+                        <h4>The beginning</h4>
+                        <p>We founded Cybernet Solutions with the mission of connecting businesses with reliable technology.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-year">2019</span>
+                        <h4>National expansion</h4>
+                        <p>We surpassed 200 clients and expanded our managed cybersecurity services.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-year">2023</span>
+                        <h4>AI &amp; Zero Trust</h4>
+                        <p>We integrated AI into network management and Zero Trust architectures for all our clients.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-year">2025</span>
+                        <h4>500+ companies</h4>
+                        <p>We reached 500 companies served with a verified 99% satisfaction rate.</p>
+                    </div>
+                </div>
+
+                <div class="growth-card">
+                    <div>
+                        <span class="growth-label">Sustained growth</span>
+                        <p class="growth-text">
+                            93% of our clients renew their services year after year — proof of the
+                            real value we deliver.
+                        </p>
+                    </div>
+                    <div class="growth-figure">
+                        <span class="growth-number">93%</span>
+                        <svg width="60" height="32" viewBox="0 0 60 32" fill="none">
+                            <path d="M2 28L14 20L24 24L36 12L48 16L58 4" stroke="#7BFFB1" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M52 4h6v6" stroke="#7BFFB1" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ TESTIMONIALS ============ -->
+        <section class="section testimonials">
+            <div class="container">
+                <div class="section-head">
+                    <span class="section-eyebrow">Testimonials</span>
+                    <h2 class="section-title">What our clients say.</h2>
+                </div>
+
+                <div class="testimonials-grid">
+                    <article class="testimonial">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-quote">
+                            “Cybernet completely transformed our network and significantly reduced
+                            our cybersecurity risks. Their team is extremely professional.”
+                        </p>
+                        <footer class="testimonial-author">
+                            <span class="avatar avatar-1">EP</span>
+                            <div>
+                                <strong>Elizabeth Perez</strong>
+                                <span>Operations Lead</span>
+                            </div>
+                        </footer>
+                    </article>
+
+                    <article class="testimonial testimonial-feature">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-quote">
+                            “Their scalable cybersecurity strategy and proactive support let us
+                            grow without worry. I would recommend them without hesitation.”
+                        </p>
+                        <footer class="testimonial-author">
+                            <span class="avatar avatar-2">AW</span>
+                            <div>
+                                <strong>Alice Williams</strong>
+                                <span>CTO</span>
+                            </div>
+                        </footer>
+                    </article>
+
+                    <article class="testimonial">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-quote">
+                            “The cloud migration process was flawless. Their innovative approach
+                            made the difference at every stage of the project.”
+                        </p>
+                        <footer class="testimonial-author">
+                            <span class="avatar avatar-3">AG</span>
+                            <div>
+                                <strong>Alan García</strong>
+                                <span>IT Manager</span>
+                            </div>
+                        </footer>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ CTA / CONTACT ============ -->
+        <section class="section cta-section" id="contact">
+            <div class="container">
+                <div class="cta-card">
+                    <div class="cta-shapes" aria-hidden="true">
+                        <span class="shape shape-1"></span>
+                        <span class="shape shape-2"></span>
+                        <span class="shape shape-3"></span>
+                    </div>
+                    <div class="cta-copy">
+                        <span class="section-eyebrow eyebrow-light">Get in touch</span>
+                        <h2 class="cta-title">Ready to transform your network?</h2>
+                        <p class="cta-text">
+                            Schedule a call with our team and discover how we can boost your
+                            infrastructure with AI, Zero Trust and 24/7 support.
+                        </p>
+                        <div class="cta-meta">
+                            <a href="mailto:cybernetsolutionss@hotmail.com" class="cta-meta-item">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="white" stroke-width="2"/><path d="m3 7 9 6 9-6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                cybernetsolutionss@hotmail.com
+                            </a>
+                            <span class="cta-meta-item">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M22 16.92V21a1 1 0 0 1-1.1 1 19.9 19.9 0 0 1-8.66-3.07 19.5 19.5 0 0 1-6-6A19.9 19.9 0 0 1 3.18 4.1 1 1 0 0 1 4.18 3h4.08a1 1 0 0 1 1 .75 11 11 0 0 0 .57 2.5 1 1 0 0 1-.22 1l-1.7 1.7a16 16 0 0 0 6 6l1.7-1.7a1 1 0 0 1 1-.22 11 11 0 0 0 2.5.57 1 1 0 0 1 .75 1z" stroke="white" stroke-width="2" stroke-linejoin="round"/></svg>
+                                24/7 Support
+                            </span>
+                        </div>
+                    </div>
+
+                    <form class="cta-form" id="contactForm" novalidate>
+                        <h3>Tell us about your project</h3>
+                        <div class="form-row">
+                            <label>
+                                <span>Name</span>
+                                <input type="text" name="name" required placeholder="Your name" />
+                            </label>
+                            <label>
+                                <span>Email</span>
+                                <input type="email" name="email" required placeholder="your@email.com" />
+                            </label>
+                        </div>
+                        <label>
+                            <span>Company</span>
+                            <input type="text" name="company" placeholder="Your company name" />
+                        </label>
+                        <label>
+                            <span>How can we help?</span>
+                            <textarea name="message" rows="4" placeholder="Tell us briefly about your needs..."></textarea>
+                        </label>
+                        <button type="submit" class="btn btn-dark btn-lg btn-full">
+                            Send message
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </button>
+                        <p class="form-note" id="formNote" hidden>Message sent! We'll be in touch shortly.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <a href="#top" class="brand brand-footer">
+                    <span class="brand-mark">
+                        <img src="assets/logo.svg" alt="" width="44" height="44" />
+                    </span>
+                    <span class="brand-text">
+                        <span class="brand-name">Cybernet</span>
+                        <span class="brand-sub">Solutions</span>
+                    </span>
+                </a>
+                <p class="footer-desc">
+                    We connect real people with reliable, scalable and secure technology.
+                </p>
+                <div class="socials">
+                    <a href="#" aria-label="LinkedIn" class="social">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zM8.34 18.34V10.5H5.67v7.84h2.67zM7 9.34a1.55 1.55 0 1 0 0-3.1 1.55 1.55 0 0 0 0 3.1zm11.34 9V14c0-2.5-1.34-3.67-3.13-3.67-1.45 0-2.1.8-2.46 1.36V10.5h-2.67v7.84h2.67v-4.38c0-1.16.22-2.28 1.65-2.28 1.41 0 1.43 1.32 1.43 2.36v4.3h2.5z"/></svg>
+                    </a>
+                    <a href="#" aria-label="Twitter" class="social">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22 5.8a8.5 8.5 0 0 1-2.4.7 4.2 4.2 0 0 0 1.8-2.3 8.4 8.4 0 0 1-2.6 1A4.1 4.1 0 0 0 12 9a11.7 11.7 0 0 1-8.5-4.3 4.1 4.1 0 0 0 1.3 5.5A4 4 0 0 1 3 9.7v.1a4.1 4.1 0 0 0 3.3 4 4.1 4.1 0 0 1-1.9.1 4.1 4.1 0 0 0 3.9 2.9A8.3 8.3 0 0 1 2 18.5a11.7 11.7 0 0 0 6.3 1.8c7.6 0 11.7-6.3 11.7-11.7v-.5A8.4 8.4 0 0 0 22 5.8z"/></svg>
+                    </a>
+                    <a href="#" aria-label="Instagram" class="social">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h5>Company</h5>
+                <ul>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h5>Services</h5>
+                <ul>
+                    <li><a href="#services">Network Assessment</a></li>
+                    <li><a href="#services">Network Design</a></li>
+                    <li><a href="#services">Implementation</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col footer-newsletter">
+                <h5>Subscribe</h5>
+                <p>Get updates on cybersecurity and networks.</p>
+                <form class="subscribe-form" id="subscribeForm" novalidate>
+                    <input type="email" placeholder="your@email.com" required />
+                    <button type="submit" aria-label="Subscribe">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <span>© <span id="year"></span> Cybernet Solutions. All rights reserved.</span>
+                <div class="footer-legal">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

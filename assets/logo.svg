@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Cybernet Solutions">
+    <circle cx="50" cy="50" r="50" fill="#0B0B0B"/>
+    <!-- Arc accent line above CS -->
+    <path d="M22 36 Q 50 18 78 36" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <!-- CS letters -->
+    <text x="50" y="68" text-anchor="middle"
+          font-family="'Plus Jakarta Sans', 'Inter', Arial, sans-serif"
+          font-weight="900"
+          font-size="44"
+          fill="white"
+          letter-spacing="-2">CS</text>
+    <!-- SOLUTIONS micro text -->
+    <text x="50" y="82" text-anchor="middle"
+          font-family="'Inter', Arial, sans-serif"
+          font-weight="600"
+          font-size="6"
+          fill="white"
+          letter-spacing="2">SOLUTIONS</text>
+</svg>

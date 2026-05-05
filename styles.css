@@ -1207,8 +1207,49 @@ body.menu-open .overlay { opacity: 1; visibility: visible; }
 
     .hero { padding: 60px 0 80px; }
     .hero-title { font-size: clamp(36px, 9vw, 56px); }
-    .hero-visual { height: 360px; }
-    .hero-floater-1 { right: -10px; }
+    .hero-text { font-size: 15px; }
+    .hero-actions { gap: 10px; }
+    .hero-actions .btn { flex: 1 1 auto; min-width: 0; }
+
+    /* Simplified hero visual on mobile: dashboard mock only, framed by a soft blob bg */
+    .hero-visual {
+        height: auto;
+        min-height: 0;
+        max-width: 100%;
+        margin: 8px 0 0;
+        padding: 24px 0 32px;
+    }
+    .hero-blob {
+        position: absolute;
+        inset: 12px 8% 12px 8%;
+        border-radius: 32px;
+        opacity: 0.85;
+        box-shadow: 0 24px 48px rgba(45,91,255,0.28);
+    }
+    .hero-card-main {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        margin: 0 auto;
+        width: min(92%, 340px);
+    }
+    .hero-floater {
+        position: absolute;
+        animation-duration: 5s;
+    }
+    .hero-floater-1 {
+        top: 8px;
+        right: 4%;
+        left: auto;
+    }
+    .hero-floater-2 {
+        bottom: 8px;
+        left: 4%;
+        right: auto;
+    }
+    .hero-floater strong { font-size: 12px; white-space: nowrap; }
+    .hero-floater span { font-size: 10px; white-space: nowrap; }
 
     .about-stats { grid-template-columns: 1fr 1fr; }
     .stat-primary, .stat-dark { transform: none; }
